@@ -25,29 +25,29 @@ def get_filters():
             wrong_input()
 
     while True:
-        choice = input("Would you like to filter by month, day, or not at all (month/day/none)?")
-        if choice.lower() == 'month':
+        choice = input("Would you like to filter by month, day, or not at all (month/day/none)?").lower()
+        if choice == 'month':
             month = input("Please choose a month (January, February, March, April, May, June, or 'all'):")
             if month.lower() in ('january', 'february', 'march', 'april', 'may', 'june', 'all'):
                 day = 'all'
                 break
             else:
                 wrong_input()
-        elif choice.lower() == 'day':
+        elif choice == 'day':
             day = input("Please choose a day of the week: (Monday, Tuesday, Wednesday, ..., or 'all'):")
             if day.lower() in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'):
                 month = 'all'
                 break
             else:
                 wrong_input()
-        elif choice.lower() == 'none':
+        elif choice == 'none':
             month = 'all'
             day = 'all'
             break
         else:
             wrong_input()
 
-    return city.lower(), month.lower(), day.lower()
+    return city, month, day
 
 def load_data(city, month, day):
     """

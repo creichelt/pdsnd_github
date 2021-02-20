@@ -2,7 +2,6 @@
 20 Feb 2021
 
 ### Project Title
-
 Udacity Git Project
 
 ### Description
@@ -14,4 +13,3 @@ bikeshare.py
 
 ### Credits
 used various stackoverflow articles, python and pandas documentation as well as udacity knowledge base
-

@@ -2,7 +2,8 @@
 20 Feb 2021
 
 ### Project Title
-udacity git project
+
+Udacity Git Project
 
 ### Description
 Udacity Nanodegree Programming for Data Science with Python

@@ -1,5 +1,5 @@
 ### Date created
-20 Feb 2021
+02/20/2021
 
 ### Project Title
 Udacity Git Project

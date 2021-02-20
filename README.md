@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+20 Feb 2021
 
 ### Project Title
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+Udacity Nanodegree Programming for Data Science with Python
+Python project: create an interactive program that lets you filter and output US Bikeshare ride data
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+used various stackoverflow articles, python and pandas documentation as well as udacity knowledge base
 

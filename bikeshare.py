@@ -17,8 +17,8 @@ def get_filters():
     """
 
     while True:
-        city = input('Please choose a city: Chicago, New York City, or Washington: ')
-        if city.lower() in ('chicago', 'new york city', 'washington'):
+        city = input('Please choose a city: Chicago, New York City, or Washington: ').lower()
+        if city in ('chicago', 'new york city', 'washington'):
             print('')
             break
         else:
@@ -34,8 +34,8 @@ def get_filters():
             else:
                 wrong_input()
         elif choice == 'day':
-            day = input("Please choose a day of the week: (Monday, Tuesday, Wednesday, ..., or 'all'): ")
-            if day.lower() in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'):
+            day = input("Please choose a day of the week: (Monday, Tuesday, Wednesday, ..., or 'all'): ").lower()
+            if day in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'):
                 month = 'all'
                 break
             else:

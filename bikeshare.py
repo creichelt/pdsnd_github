@@ -185,14 +185,14 @@ def raw_data(df):
     asking after every 5 results if they want to see more
     """
 
-    raw = input('Do you want to see the raw data (yes/no)? ')
+    raw = input('Do you want to see the raw data (yes/no)? ').lower()
     while True:
-        if raw.lower() == 'yes':
+        if raw == 'yes':
             i=0
             print(df.loc[i:i+4])
             for num in range(0,len(df.index)):
-                more_data = input('Do you want to see more data (yes/no)? ')
-                if more_data.lower() == 'yes':
+                more_data = input('Do you want to see more data (yes/no)? ').lower()
+                if more_data == 'yes':
                     i+=5
                     print(df.loc[i:i+4])
                 elif more_data.lower() == 'no':
@@ -200,7 +200,7 @@ def raw_data(df):
                 else:
                     wrong_input()
             break
-        elif raw.lower() == 'no':
+        elif raw == 'no':
             break
         else:
             wrong_input()
@@ -219,10 +219,10 @@ def main():
         raw_data(pd.read_csv(CITY_DATA[city]))
 
         # asks if user wants to restart
-        restart = input('\nWould you like to restart (yes/no)? ')
-        if restart.lower() == 'yes':
+        restart = input('\nWould you like to restart (yes/no)? ').lower()
+        if restart == 'yes':
             pass
-        elif restart.lower() == 'no':
+        elif restart == 'no':
             print("\nThanks for using. Goodbye!\n")
             break
         else:
